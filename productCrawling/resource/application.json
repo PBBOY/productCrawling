@@ -1,0 +1,40 @@
+{
+    "database": [
+        {
+            "database-type": "MONGO",
+            "host": "mongodb://192.168.137.222:27017/",
+            "server": "192.168.137.222",
+            "port": 27017,
+            "username": "",
+            "password": "",
+            "database-name": "crawl_database",
+            "tables":{
+                "table-1": "category",
+                "table-2": "product"
+            }
+        },
+        {
+            "database-type": "MONGO_DEV",
+            "host": "mongodb://10.20.97.84:30014/",
+            "server": "10.20.97.84",
+            "port": 30014,
+            "username": "root",
+            "password": "tsGt3KRAQ6",
+            "database-name": "crawl_database",
+            "tables":{
+                "table-1": "category",
+                "table-2": "product"
+            }
+        }
+    ],
+    "crawl_config": {
+        "exclude-category": ["패션잡화", "화장품/미용","출산/육아","면세점"],
+        "crawl-category-list": ["다이어리/플래너","노트/수첩","필기도구","앨범","보드/칠판","데스크용품","용지","사무기기","제도용품","이벤트/파티용품","스티커/테이프","스탬프/도장","문구용품","파일/바인더","지도/지구본","카드/엽서/봉투","사무용품"],
+        "category-id": 50000000,
+        "crawl-big-category": true,
+        "crawl-detail-category": false,
+        "crawl-count": 80,
+        "crawl-page-range": 2,
+        "crawl-sleep-time": 12
+    }
+}
